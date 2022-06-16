@@ -9,7 +9,7 @@ id: ${uuidv4()}
 date: ${new Date().toUTCString()}
 title: ${process.argv.slice(2).join(" ")}
 description:
-tags:
+tags: []
 comment: true
 ---
 `;

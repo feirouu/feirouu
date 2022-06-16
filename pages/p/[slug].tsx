@@ -35,15 +35,12 @@ export default function PostPage({ source, frontMatter }: Props) {
                 publishDate.getMonth() + 1
               }月${publishDate.getDate()}日`}
             </time>
-            {frontMatter.tags && frontMatter.tags.length && (
-              <span className="tag">|</span>
-            )}
-            {frontMatter.tags &&
-              frontMatter.tags.map((tag) => (
-                <Link key={tag} href={`/t/${tag}`} passHref={true}>
-                  <a className="tag">#{tag}</a>
-                </Link>
-              ))}
+            {frontMatter.tags.length && <span className="tag">|</span>}
+            {frontMatter.tags.map((tag) => (
+              <Link key={tag} href={`/t/${tag}`} passHref={true}>
+                <a className="tag">#{tag}</a>
+              </Link>
+            ))}
           </p>
           <MDXRemote {...source} />
         </article>
