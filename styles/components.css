@@ -1,0 +1,9 @@
+ol.articles li::before {
+  content: attr(data-time);
+  left: auto;
+  top: auto;
+}
+
+.tag {
+  margin-right: 0.5rem;
+}
