@@ -10,6 +10,7 @@ date: ${new Date().toUTCString()}
 title: ${process.argv.slice(2).join(" ")}
 description:
 tags:
+comment: true
 ---
 `;
 }
