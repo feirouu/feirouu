@@ -11,7 +11,7 @@
   --global-space: 10px;
   --font-stack: system-ui, —apple-system, Segoe UI, Rototo, Emoji, Helvetica,
     Arial, sans-serif;
-  --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+  --mono-font-stack: Fira Code, Menlo, Monaco, Lucida Console, Liberation Mono,
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   --background-color: #fff;
   --page-width: 60em;

@@ -167,8 +167,6 @@ pre {
   word-wrap: break-word;
   color: var(--secondary-color);
   background-color: var(--background-color);
-  border: 1px solid var(--secondary-color);
-  padding: var(--global-space);
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
   white-space: -pre-wrap;
@@ -186,7 +184,6 @@ pre code {
 }
 
 .terminal blockquote,
-.terminal code,
 .terminal h1,
 .terminal h2,
 .terminal h3,
@@ -197,7 +194,7 @@ pre code {
 .terminal .logo {
   font-size: var(--global-font-size);
   font-style: normal;
-  font-family: var(--font-stack);
+  font-family: var(--mono-font-stack);
   color: var(--font-color);
 }
 
@@ -904,74 +901,4 @@ figure {
 figure > figcaption {
   color: var(--secondary-color);
   text-align: center;
-}
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: var(--block-background-color);
-  color: var(--font-color);
-}
-
-.hljs-comment,
-.hljs-quote {
-  color: var(--secondary-color);
-}
-
-.hljs-variable {
-  color: var(--font-color);
-}
-
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-built_in,
-.hljs-name,
-.hljs-tag {
-  color: var(--primary-color);
-}
-
-.hljs-string,
-.hljs-title,
-.hljs-section,
-.hljs-attribute,
-.hljs-literal,
-.hljs-template-tag,
-.hljs-template-variable,
-.hljs-type,
-.hljs-addition {
-  color: var(--secondary-color);
-}
-
-.hljs-string {
-  color: var(--secondary-color);
-}
-
-.hljs-deletion,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-meta {
-  color: var(--primary-color);
-}
-
-.hljs-doctag {
-  color: var(--secondary-color);
-}
-
-.hljs-attr {
-  color: var(--primary-color);
-}
-
-.hljs-symbol,
-.hljs-bullet,
-.hljs-link {
-  color: var(--primary-color);
-}
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-strong {
-  font-weight: bold;
 }
