@@ -15,6 +15,7 @@
   padding: 2rem;
   background: #2d2b57;
   font-weight: normal;
+  white-space: pre;
 }
 
 .hljs-title {
