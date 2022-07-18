@@ -23,7 +23,7 @@ async function generate() {
       feed.item({
         guid: frontmatter.data.id,
         title: frontmatter.data.title,
-        url: "/p/" + name.replace(/\.mdx?/, ""),
+        url: "https://junyu.dev" + "/p/" + name.replace(/\.mdx?/, ""),
         date: frontmatter.data.date,
         description: frontmatter.data.description,
         categories: frontmatter.data.tags,
