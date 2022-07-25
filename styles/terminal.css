@@ -339,6 +339,7 @@ ul ul {
 ol.terminal-toc li {
   border-bottom: 1px dotted var(--secondary-color);
   padding: 0;
+  padding-right: 5em;
   margin-bottom: 15px;
 }
 
