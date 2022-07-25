@@ -2,6 +2,8 @@ import type { ReactElement } from "react";
 import Head from "next/head";
 import Header from "../components/page/header";
 import Slogan from "../components/page/slogan";
+import Project from "../components/project";
+import { PROJECTS } from "../data/projects";
 
 export default function AboutPage() {
   return (
@@ -15,61 +17,36 @@ export default function AboutPage() {
       </Head>
       <main className="container">
         <section>
-          <h2>Portfolios</h2>
+          <h2>Projects</h2>
+          <section
+            className="grid grid-3"
+            style={{ marginBottom: "calc(var(--global-space) * 2)" }}
+          >
+            {PROJECTS.map((project, index) => (
+              <Project key={index} project={project} />
+            ))}
+          </section>
+        </section>
+        <section>
+          <h2>Stack</h2>
           <ul>
-            <li>
-              <p>
-                <strong>2020</strong>
-              </p>
-              <ul>
-                <li>
-                  <p>
-                    Remake{" "}
-                    <a
-                      href="///note.ink"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      note.ink
-                    </a>
-                    .
-                  </p>
-                </li>
-              </ul>
-            </li>
+            <li>Python</li>
+            <li>JavaScript</li>
           </ul>
+        </section>
+        <section>
+          <h2>Learning</h2>
           <ul>
-            <li>
-              <p>
-                <strong>2019</strong>
-              </p>
-              <ul>
-                <li>
-                  <p>A simple but elegant blogging platform.</p>
-                  <p>
-                    <a
-                      href="///note.ink"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      note.ink
-                    </a>
-                  </p>
-                </li>
-              </ul>
-            </li>
+            <li>Rust</li>
+            <li>Swift</li>
           </ul>
         </section>
         <section>
           <h2>Contact Me</h2>
           <ul>
             <li>
-              <a
-                href="///note.ink/@Junyu"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                note.ink
+              <a href="mailto:me@junyu.dev" rel="noopener noreferrer">
+                me@junyu.dev
               </a>
             </li>
             <li>
