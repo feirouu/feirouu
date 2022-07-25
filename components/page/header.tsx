@@ -7,8 +7,8 @@ type Props = {
 
 export default function Header({ activeNav }: Props) {
   const routers = [
-    { uri: "/", name: "posts", label: "目录" },
-    { uri: "/about", name: "about", label: "关于" },
+    { uri: "/", name: "posts", label: "TOC" },
+    { uri: "/about", name: "about", label: "About" },
   ];
 
   return (
