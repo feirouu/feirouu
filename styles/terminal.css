@@ -740,15 +740,16 @@ select:-webkit-autofill:focus {
   border: 1px solid var(--secondary-color);
 }
 
-.terminal-card > header {
+.terminal-card > .header {
   color: var(--invert-font-color);
   text-align: center;
   background-color: var(--secondary-color);
   padding: 0.5em 0;
+  margin: 0;
 }
 
-.terminal-card > div:first-of-type {
-  padding: var(--global-space);
+.terminal-card > .body:first-of-type {
+  margin: var(--global-space);
 }
 
 .terminal-timeline {
@@ -767,11 +768,11 @@ select:-webkit-autofill:focus {
   z-index: 400;
 }
 
-.terminal-timeline .terminal-card {
+.terminal-timeline .timeline {
   margin-bottom: 25px;
 }
 
-.terminal-timeline .terminal-card::before {
+.terminal-timeline .timeline::before {
   content: " ";
   background: var(--invert-font-color);
   border: 2px solid var(--secondary-color);
