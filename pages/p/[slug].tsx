@@ -16,14 +16,16 @@ import { getPost, getAllPosts } from "../../utils/mdx";
 type Props = {
   source: MDXRemoteSerializeResult;
   frontMatter: Omit<ProfilePost, "slug">;
+  slug: string;
 };
 
-export default function PostPage({ source, frontMatter }: Props) {
+export default function PostPage({ source, frontMatter, slug }: Props) {
   const publishDate = new Date(frontMatter.date);
   return (
     <>
       <Head>
         <meta name="description" content={frontMatter.description} />
+        <link rel="canonical" href={`https://junyu.dev/p/${slug}`} />
         <title>{`${frontMatter.title} - Junyu Dev`}</title>
       </Head>
       <main className="container terminal">
@@ -101,6 +103,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     props: {
       source: mdxSource,
       frontMatter: data,
+      slug: slug,
     },
   };
 };

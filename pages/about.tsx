@@ -13,6 +13,7 @@ export default function AboutPage() {
           name="description"
           content="Hey there, I'm Junyu Mu. Just another full stack engineer."
         />
+        <link rel="canonical" href="https://junyu.dev/about" />
         <title>Profile - Junyu Dev</title>
       </Head>
       <main className="container">

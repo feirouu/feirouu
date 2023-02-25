@@ -39,6 +39,7 @@ export default function Home({ posts, tag }: Props) {
           name="description"
           content="有时候，脑袋里会跳出一些想法，于是我把它们记录下来，放在这里。"
         />
+        <link rel="canonical" href={`https://junyu.dev/p/${tag}`} />
         <title>{`标签：${tag} - Junyu Dev`}</title>
       </Head>
       <Slogan words={`标签：${tag}`} />
