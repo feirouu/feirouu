@@ -15,8 +15,8 @@ export default function Header({ activeNav }: Props) {
     <header className="container terminal-nav">
       <section className="terminal-logo">
         <strong className="logo terminal-prompt">
-          <Link href="/" passHref={true}>
-            <a className="no-style">Junyu Dev</a>
+          <Link href="/" className="no-style" passHref={true}>
+            Junyu Dev
           </Link>
         </strong>
       </section>
@@ -24,14 +24,14 @@ export default function Header({ activeNav }: Props) {
         <ul>
           {routers.map((route) => (
             <li key={route.uri}>
-              <Link href={route.uri} passHref={true}>
-                <a
-                  className={classNames("menu-item", {
-                    active: activeNav === route.name,
-                  })}
-                >
-                  {route.label}
-                </a>
+              <Link
+                href={route.uri}
+                className={classNames("menu-item", {
+                  active: activeNav === route.name,
+                })}
+                passHref={true}
+              >
+                {route.label}
               </Link>
             </li>
           ))}

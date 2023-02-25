@@ -24,7 +24,7 @@ export default function PostPage({ source, frontMatter }: Props) {
     <>
       <Head>
         <meta name="description" content={frontMatter.description} />
-        <title>{frontMatter.title} - Junyu Dev</title>
+        <title>{`${frontMatter.title} - Junyu Dev`}</title>
       </Head>
       <main className="container terminal">
         <article>
@@ -37,8 +37,13 @@ export default function PostPage({ source, frontMatter }: Props) {
             </time>
             {frontMatter.tags.length > 0 && <span className="tag">|</span>}
             {frontMatter.tags.map((tag) => (
-              <Link key={tag} href={`/t/${tag}`} passHref={true}>
-                <a className="tag">#{tag}</a>
+              <Link
+                key={tag}
+                className="tag"
+                href={`/t/${tag}`}
+                passHref={true}
+              >
+                #{tag}
               </Link>
             ))}
           </p>

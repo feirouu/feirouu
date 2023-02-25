@@ -57,7 +57,7 @@ export default function Home({ posts }: Props) {
                       }月${new Date(post.date).getDate()}日`}
                     >
                       <Link href={`/p/${post.slug}`} passHref={true}>
-                        <a>{post.title}</a>
+                        {post.title}
                       </Link>
                     </li>
                   ))}
