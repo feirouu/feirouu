@@ -15,7 +15,7 @@ export default function About() {
         <link rel="canonical" href={`${siteUrl}/about`} />
         <title>{`Profile - ${siteLabel}`}</title>
       </Head>
-      <p>Hey there, I'm Junyu Mu. Just another full stack engineer.</p>
+      <p>{`Hey there, I'm Junyu Mu. Just another full stack engineer.`}</p>
     </>
   );
 }
