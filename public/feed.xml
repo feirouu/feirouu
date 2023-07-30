@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Junyu Dev]]></title>
+        <description><![CDATA[Junyu Dev]]></description>
+        <link>https://junyu.dev</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sat, 29 Jul 2023 18:03:01 GMT</lastBuildDate>
+        <atom:link href="https://junyu.dev/feed.xml" rel="self" type="application/rss+xml"/>
+        <language><![CDATA[zh-cn]]></language>
+        <item>
+            <title><![CDATA[[LeetCode]217. Contains Duplicate]]></title>
+            <description><![CDATA[LeetCode上的第217题 ——《Contains Duplicate》，使用Python的解题思路，以及和社区其他Python解题思路的对比。]]></description>
+            <link>https://junyu.dev/p/leetcode-217-contains-duplicate</link>
+            <guid isPermaLink="false">c4b40a14-c6a2-455b-a13a-f62364eaee6e</guid>
+            <category><![CDATA[LeetCode]]></category>
+            <category><![CDATA[Python]]></category>
+            <pubDate>Thu, 20 Oct 2022 14:15:14 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

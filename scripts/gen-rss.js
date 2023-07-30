@@ -5,18 +5,18 @@ const matter = require("gray-matter");
 
 async function generate() {
   const feed = new RSS({
-    title: "Junyu's Blog",
+    title: "Junyu Dev",
     site_url: "https://junyu.dev",
     feed_url: "https://junyu.dev/feed.xml",
     language: "zh-cn",
   });
 
-  const posts = await fs.readdir(path.join(__dirname, "..", "data", "posts"));
+  const posts = await fs.readdir(path.join(__dirname, "..", "pages", "p"));
 
   await Promise.all(
     posts.map(async (name) => {
       const content = await fs.readFile(
-        path.join(__dirname, "..", "data", "posts", name)
+        path.join(__dirname, "..", "pages", "p", name)
       );
       const frontmatter = matter(content);
 
