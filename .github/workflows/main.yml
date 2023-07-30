@@ -1,0 +1,38 @@
+name: Deploy Next.js Static Pages
+
+on:
+  push:
+    branches:
+      - main # 触发条件：当 main 分支有代码 push 时执行
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js and dependencies
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18.x" # 使用 Node.js 14.x 版本
+
+      - name: Install pnpm
+        run: |
+          corepack enable
+
+      - name: Build and Export Next.js Static Pages
+        run: |
+          pnpm install
+          pnpm build
+
+      - name: Deploy to Server
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.HOST }} # 服务器的 IP 地址
+          port: ${{ secrets.PORT }}
+          username: ${{ secrets.USERNAME }} # 服务器登录用户名
+          password: ${{ secrets.SERVER_PASSWORD }} # 在 GitHub 仓库的 Secrets 中设置服务器登录密码
+          source: "out/" # 导出的静态页面目录
+          target: ${{ secrets.TARGET }} # 服务器上的静态页面目录
