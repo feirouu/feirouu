@@ -19,14 +19,13 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
       {getLayout(<Component {...pageProps} />)}
       {process.env.NODE_ENV !== "development" && (
         <>
-          <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" />
+          <Script src="https://www.googletagmanager.com/gtag/js?id=G-8K9LR114MX" />
           <Script id="google-analytics">
             {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
-            gtag('config', 'GA_MEASUREMENT_ID');
+            gtag('config', 'G-8K9LR114MX');
           `}
           </Script>
         </>
