@@ -7,6 +7,7 @@ import rehypePrettyCode from "rehype-pretty-code";
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   reactStrictMode: true,
+  output: "export",
 };
 
 /** @type {import('rehype-pretty-code').Options} */
