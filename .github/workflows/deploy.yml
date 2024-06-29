@@ -50,3 +50,4 @@ jobs:
           port: ${{ secrets.PORT }}
           source: "out/*"
           target: ${{ secrets.TARGET_PATH }}
+          strip_components: 1
